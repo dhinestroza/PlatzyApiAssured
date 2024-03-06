@@ -1,0 +1,46 @@
+<div>POST to https://restful-booker.herokuapp.com/booking</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;id&quot;: 304354378,
+    &quot;booking&quot;: {
+        &quot;firstName&quot;: &quot;Gonzalo&quot;,
+        &quot;lastname&quot;: &quot;Streich&quot;,
+        &quot;totalPrice&quot;: 0.6138862873489546,
+        &quot;depositPaid&quot;: false,
+        &quot;bookingDates&quot;: {
+            &quot;checkin&quot;: 237754972729,
+            &quot;checkout&quot;: 775143249145
+        },
+        &quot;additionalNeeds&quot;: &quot;Charles Scribner&#39;s Sons&quot;
+    }
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: application/json</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://restful-booker.herokuapp.com/booking&#39; -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;id&quot;: 304354378,
+    &quot;booking&quot;: {
+        &quot;firstName&quot;: &quot;Gonzalo&quot;,
+        &quot;lastname&quot;: &quot;Streich&quot;,
+        &quot;totalPrice&quot;: 0.6138862873489546,
+        &quot;depositPaid&quot;: false,
+        &quot;bookingDates&quot;: {
+            &quot;checkin&quot;: 237754972729,
+            &quot;checkout&quot;: 775143249145
+        },
+        &quot;additionalNeeds&quot;: &quot;Charles Scribner&#39;s Sons&quot;
+    }
+}&#39;
+</div>
